@@ -14,6 +14,7 @@ namespace Calculadora
     {
         public float num1;
         public float num2;
+        public float resultado;
         public string operacion;
 
         public Calculadora()
@@ -26,6 +27,7 @@ namespace Calculadora
             tbResult.Text = "";
             num1 = 0;
             num2 = 0;
+            resultado = 0;
             operacion = "";
         }
 
@@ -109,35 +111,38 @@ namespace Calculadora
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (resultado != float.Parse(tbResult.Text))
+                num2 = float.Parse(tbResult.Text);
             try
             {
-                if(num1 != float.Parse(tbResult.Text))
-                    num2 = float.Parse(tbResult.Text);
-
                 switch (operacion)
                 {
                     case "suma":
                         {
-                            tbResult.Text = "" + (num1 + num2);
-                            num1 = float.Parse(tbResult.Text);
+                            resultado = num1 + num2;
+                            tbResult.Text = "" + resultado;
+                            num1 = resultado;
                         }
                         break;
                     case "resta":
                         {
-                            tbResult.Text = "" + (num1 - num2);
-                            num1 = float.Parse(tbResult.Text);
+                            resultado = num1 - num2;
+                            tbResult.Text = "" + resultado;
+                            num1 = resultado;
                         }
                         break;
                     case "multiplicacion":
                         {
-                            tbResult.Text = "" + (num1 * num2);
-                            num1 = float.Parse(tbResult.Text);
+                            resultado = num1 * num2;
+                            tbResult.Text = "" + resultado;
+                            num1 = resultado;
                         }
                         break;
                     case "division":
                         {
-                            tbResult.Text = "" + (num1 / num2);
-                            num1 = float.Parse(tbResult.Text);
+                            resultado = num1 / num2;
+                            tbResult.Text = "" + resultado;
+                            num1 = resultado;
                         }
                         break;
                 }

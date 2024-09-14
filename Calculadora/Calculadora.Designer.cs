@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculadora));
             this.bt1 = new System.Windows.Forms.Button();
             this.bt2 = new System.Windows.Forms.Button();
             this.bt3 = new System.Windows.Forms.Button();
@@ -49,12 +50,14 @@
             // 
             // bt1
             // 
+            this.bt1.BackColor = System.Drawing.SystemColors.Control;
+            this.bt1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.bt1.Location = new System.Drawing.Point(12, 46);
             this.bt1.Name = "bt1";
             this.bt1.Size = new System.Drawing.Size(60, 40);
             this.bt1.TabIndex = 0;
             this.bt1.Text = "1";
-            this.bt1.UseVisualStyleBackColor = true;
+            this.bt1.UseVisualStyleBackColor = false;
             this.bt1.Click += new System.EventHandler(this.bt1_Click);
             // 
             // bt2
@@ -238,6 +241,7 @@
             this.Controls.Add(this.bt3);
             this.Controls.Add(this.bt2);
             this.Controls.Add(this.bt1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calculadora";
             this.Text = "Calculadora";
             this.ResumeLayout(false);

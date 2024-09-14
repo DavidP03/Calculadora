@@ -8,3 +8,7 @@ C:\Users\David Prada\Desktop\Proyectos\Calculadora\obj\Debug\Calculadora.csproj.
 C:\Users\David Prada\Desktop\Proyectos\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
 C:\Users\David Prada\Desktop\Proyectos\Calculadora\obj\Debug\Calculadora.exe
 C:\Users\David Prada\Desktop\Proyectos\Calculadora\obj\Debug\Calculadora.pdb
+C:\Users\David Prada\Desktop\Proyectos\Calculadora\bin\Debug\Calculadora.exe.manifest
+C:\Users\David Prada\Desktop\Proyectos\Calculadora\bin\Debug\Calculadora.application
+C:\Users\David Prada\Desktop\Proyectos\Calculadora\obj\Debug\Calculadora.exe.manifest
+C:\Users\David Prada\Desktop\Proyectos\Calculadora\obj\Debug\Calculadora.application
